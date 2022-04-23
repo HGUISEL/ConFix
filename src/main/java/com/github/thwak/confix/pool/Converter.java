@@ -83,11 +83,7 @@ public class Converter {
 		return filtered;
 	}
 
-	public static EditScript combineEditOps(EditScript script) {
-		return combineEditOps(script, true);
-	}
-
-	public static EditScript combineEditOps(EditScript script, boolean discardDelMov){
+	public static EditScript combineEditOps(EditScript script){
 		EditScript newScript = new EditScript();
 		//Categorize each type of edit operations.
 		// detached the part where discarding del / mov operations occur into filterRemainingDelMov
